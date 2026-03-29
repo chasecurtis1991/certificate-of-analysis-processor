@@ -1,0 +1,16 @@
+{
+  "name": "coa-automation",
+  "version": "1.0.0",
+  "description": "Automates COA (Certificate of Analysis) management - watches Google Drive for new COA files, uploads them to Shopify, updates the storefront theme, and logs to Google Sheets.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "setup": "node setup.js",
+    "start": "node index.js",
+    "once": "node index.js --once"
+  },
+  "dependencies": {
+    "googleapis": "^144.0.0",
+    "pdf-parse": "^1.1.1"
+  }
+}

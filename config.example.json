@@ -1,0 +1,48 @@
+{
+  "shopify": {
+    "store": "your-store.myshopify.com",
+    "accessToken": "shpat_YOUR_SHOPIFY_ACCESS_TOKEN",
+    "themeId": 000000000000,
+    "templateKey": "templates/page.certificate-of-analysis.json"
+  },
+  "google": {
+    "credentialsPath": "./google-credentials.json",
+    "tokenPath": "./token.json",
+    "driveMainFolderId": "YOUR_GOOGLE_DRIVE_MAIN_FOLDER_ID",
+    "driveFolders": {
+      "flower": "YOUR_GOOGLE_DRIVE_FLOWER_FOLDER_ID",
+      "edibles": "YOUR_GOOGLE_DRIVE_EDIBLES_FOLDER_ID",
+      "concentrates": "YOUR_GOOGLE_DRIVE_CONCENTRATES_FOLDER_ID"
+    },
+    "sheetId": "YOUR_GOOGLE_SHEET_ID"
+  },
+  "pollIntervalMs": 300000,
+  "processedFilesPath": "./processed-files.json",
+  "sectionConfig": {
+    "flower": {
+      "sections": [
+        { "key": "YOUR_FLOWER_SECTION_KEY_1", "name": "Flower COAs", "rangeStart": "A", "rangeEnd": "S" },
+        { "key": "YOUR_FLOWER_SECTION_KEY_2", "name": "Flower COAs 2", "rangeStart": "S", "rangeEnd": "Z" }
+      ],
+      "maxBlocksPerSection": 200
+    },
+    "prerolls": {
+      "sections": [
+        { "key": "YOUR_PREROLLS_SECTION_KEY", "name": "Pre-Rolls COAs" }
+      ],
+      "maxBlocksPerSection": 50
+    },
+    "concentrates": {
+      "sections": [
+        { "key": "YOUR_CONCENTRATES_SECTION_KEY", "name": "Concentrate COAs" }
+      ],
+      "maxBlocksPerSection": 50
+    },
+    "edibles": {
+      "sections": [
+        { "key": "YOUR_EDIBLES_SECTION_KEY", "name": "Edibles COAs" }
+      ],
+      "maxBlocksPerSection": 50
+    }
+  }
+}

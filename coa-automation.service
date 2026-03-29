@@ -1,0 +1,15 @@
+[Unit]
+Description=COA Automation Service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/path/to/coa-automation
+ExecStart=/usr/bin/node index.js
+Restart=on-failure
+RestartSec=30
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
